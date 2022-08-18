@@ -110,7 +110,6 @@ class MasterScenario(BasicScenario):
         parallel_criteria.add_child(stop_criterion)
         parallel_criteria.add_child(blocked_criterion)
 
-
         return parallel_criteria
 
     def __del__(self):

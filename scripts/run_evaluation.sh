@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 ${LEADERBOARD_ROOT}/leaderboard/leaderboard_evaluator.py \
+python ${LEADERBOARD_ROOT}/leaderboard/leaderboard_evaluator.py \
 --scenarios=${SCENARIOS}  \
 --routes=${ROUTES} \
 --route-id=${ROUTE_ID} \
@@ -10,6 +10,6 @@ python3 ${LEADERBOARD_ROOT}/leaderboard/leaderboard_evaluator.py \
 --agent=${TEAM_AGENT} \
 --agent-config=${TEAM_CONFIG} \
 --debug=${DEBUG_CHALLENGE} \
---record=${RECORD_PATH} \
+--record=/home/deniz/PycharmProjects/Masters-Project/records \
 --resume=${RESUME}
 

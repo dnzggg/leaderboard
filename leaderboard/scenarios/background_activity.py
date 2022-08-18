@@ -431,7 +431,7 @@ class BackgroundBehavior(AtomicBehavior):
         return actors
 
     def _check_background_actors(self):
-        """Checks if the Traffic Manager has removed a backgroudn actor"""
+        """Checks if the Traffic Manager has removed a background actor"""
         background_actors = self._get_actors()
         alive_ids = [actor.id for actor in self._world.get_actors().filter('vehicle*')]
         for actor in background_actors:

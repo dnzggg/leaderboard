@@ -46,9 +46,9 @@ from srunner.scenariomanager.scenarioatomics.atomic_criteria import (CollisionTe
                                                                      RunningStopTest,
                                                                      ActorSpeedAboveThresholdTest)
 
-from leaderboard.scenarios.background_activity import BackgroundActivity
-from leaderboard.utils.route_parser import RouteParser, TRIGGER_THRESHOLD, TRIGGER_ANGLE_THRESHOLD
-from leaderboard.utils.route_manipulation import interpolate_trajectory
+from scenarios.background_activity import BackgroundActivity
+from utils.route_parser import RouteParser, TRIGGER_THRESHOLD, TRIGGER_ANGLE_THRESHOLD
+from utils.route_manipulation import interpolate_trajectory
 
 ROUTESCENARIO = ["RouteScenario"]
 

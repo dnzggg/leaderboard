@@ -28,12 +28,12 @@ from srunner.scenariomanager.carla_data_provider import *
 from srunner.scenariomanager.timer import GameTime
 from srunner.scenariomanager.watchdog import Watchdog
 
-from leaderboard.scenarios.scenario_manager import ScenarioManager
-from leaderboard.scenarios.route_scenario import RouteScenario
-from leaderboard.envs.sensor_interface import SensorConfigurationInvalid
-from leaderboard.autoagents.agent_wrapper import  AgentWrapper, AgentError
-from leaderboard.utils.statistics_manager import StatisticsManager
-from leaderboard.utils.route_indexer import RouteIndexer
+from scenarios.scenario_manager import ScenarioManager
+from scenarios.route_scenario import RouteScenario
+from envs.sensor_interface import SensorConfigurationInvalid
+from autoagents.agent_wrapper import  AgentWrapper, AgentError
+from utils.statistics_manager import StatisticsManager
+from utils.route_indexer import RouteIndexer
 
 
 sensors_to_icons = {
@@ -311,7 +311,9 @@ class LeaderboardEvaluator(object):
 
             # Load scenario and run it
             if args.record:
-                self.client.start_recorder("{}/{}_rep{}.log".format(args.record, config.name, config.repetition_index))
+                print(args.record)
+                recorder_name = "{}/{}_rep{}.log".format(args.record, config.name, config.repetition_index)
+                self.client.start_recorder(recorder_name, True)
             self.manager.load_scenario(scenario, self.agent_instance, config.repetition_index)
 
         except Exception as e:
