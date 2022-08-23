@@ -18,7 +18,7 @@ import carla
 from srunner.scenariomanager.carla_data_provider import CarlaDataProvider
 
 from envs.sensor_interface import CallBack, OpenDriveMapReader, SpeedometerReader, SensorConfigurationInvalid
-from autoagents.autonomous_agent import Track
+from leaderboard.autoagents.autonomous_agent import Track
 
 MAX_ALLOWED_RADIUS_SENSOR = 3.0
 
