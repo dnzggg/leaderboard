@@ -10,17 +10,17 @@ This module provides an NPC agent to control the ego vehicle
 from __future__ import print_function
 
 import carla
-from agents.navigation.basic_agent import BasicAgent
+from agents.navigation.behavior_agent import BehaviorAgent
 from srunner.scenariomanager.carla_data_provider import CarlaDataProvider
 
 from autoagents.autonomous_agent import AutonomousAgent, Track
 
 
 def get_entry_point():
-    return 'BasicA'
+    return 'BehaviourA'
 
 
-class BasicA(AutonomousAgent):
+class BehaviourA(AutonomousAgent):
 
     """
     NPC autonomous agent to control the ego vehicle
@@ -79,7 +79,7 @@ class BasicA(AutonomousAgent):
                 return carla.VehicleControl()
 
             # Add an agent that follows the route to the ego
-            self._agent = BasicAgent(hero_actor, 30)
+            self._agent = BehaviorAgent(hero_actor)
 
             plan = []
             prev_wp = None
