@@ -88,7 +88,9 @@ class BasicA(AutonomousAgent):
                 if prev_wp:
                     plan.extend(self._agent.trace_route(prev_wp, wp))
                 prev_wp = wp
-
+            transform, _ = self._global_plan_world_coord[-1]
+            wp = CarlaDataProvider.get_map().get_waypoint(transform.location)
+            plan.extend(self._agent.trace_route(prev_wp, wp))
             self._agent.set_global_plan(plan)
 
             return carla.VehicleControl()

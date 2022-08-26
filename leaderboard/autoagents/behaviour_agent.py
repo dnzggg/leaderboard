@@ -79,7 +79,7 @@ class BehaviourA(AutonomousAgent):
                 return carla.VehicleControl()
 
             # Add an agent that follows the route to the ego
-            self._agent = BehaviorAgent(hero_actor)
+            self._agent = BehaviorAgent(hero_actor, behavior='cautious')
 
             plan = []
             prev_wp = None
@@ -88,7 +88,9 @@ class BehaviourA(AutonomousAgent):
                 if prev_wp:
                     plan.extend(self._agent.trace_route(prev_wp, wp))
                 prev_wp = wp
-
+            transform, _ = self._global_plan_world_coord[-1]
+            wp = CarlaDataProvider.get_map().get_waypoint(transform.location)
+            plan.extend(self._agent.trace_route(prev_wp, wp))
             self._agent.set_global_plan(plan)
 
             return carla.VehicleControl()
