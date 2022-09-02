@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+<!-- Right Turn scenarios -->
+   <route id="0" town="Town05">
+      <waypoint pitch="360.0" roll="0.0" x="-25.7" y="95.0" yaw="0.9790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="12.933048" y="95.282578" yaw="0.9790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="23.834894" y="102.817604" yaw="90.9790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="23.8" y="157.73" yaw="90.9790954589844" z="0.0" />
+   </route>
+   <route id="1" town="Town05">
+      <waypoint pitch="360.0" roll="0.0" x="-25.7" y="95.0" yaw="0.9790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="12.933048" y="95.282578" yaw="0.9790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="23.834894" y="102.817604" yaw="90.9790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="23.8" y="157.73" yaw="90.9790954589844" z="0.0" />
+      <weather id="HardRainNight" cloudiness="90.000000" precipitation="60.000000" precipitation_deposits="100.000000"
+               wind_intensity="1.000000" sun_azimuth_angle="270.000000" sun_altitude_angle="-80.000000"
+               fog_density="0.000000" fog_distance="0.000000" fog_falloff="0.000000" wetness="0.000000"/>
+   </route>
+<!--   <route id="1" town="Town05">-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-170.3" y="94.9" yaw="-0.01" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-145.291595" y="94.89" yaw="-0.01" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-131.64" y="103.3" yaw="87.7790954589844" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-131.64" y="120.1" yaw="90.0790954589844" z="0.0" />-->
+<!--   </route>-->
+<!-- Left Turn scenarios -->
+   <route id="2" town="Town05">
+      <waypoint pitch="360.0" roll="0.0" x="-145.5" y="-1.0" yaw="-180.0" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="-172.291595" y="-0.999930" yaw="-179.994690" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="-190.64" y="14.9" yaw="87.7790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="-190.64" y="40.33" yaw="90.0790954589844" z="0.0" />
+   </route>
+   <route id="3" town="Town05">
+      <waypoint pitch="360.0" roll="0.0" x="-145.5" y="-1.0" yaw="-180.0" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="-172.291595" y="-0.999930" yaw="-179.994690" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="-190.64" y="14.9" yaw="87.7790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="-190.64" y="40.33" yaw="90.0790954589844" z="0.0" />
+      <weather id="HardRainNight" cloudiness="90.000000" precipitation="60.000000" precipitation_deposits="100.000000"
+               wind_intensity="1.000000" sun_azimuth_angle="270.000000" sun_altitude_angle="-80.000000"
+               fog_density="0.000000" fog_distance="0.000000" fog_falloff="0.000000" wetness="0.000000"/>
+   </route>
+<!--   <route id="3" town="Town05">-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="76.4" y="83.0" yaw="157.0" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="47.81" y="88.454" yaw="178.94690" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="27.88" y="102.9" yaw="104.6590954589844" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="27.9" y="122.9" yaw="90.0790954589844" z="0.0" />-->
+<!--   </route>-->
+<!-- FollowLeading scenarios -->
+<!--   <route id="4" town="Town05">-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="170.6" y="-182.0" yaw="-136.0" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="53.341595" y="-206.93" yaw="-177.654690" z="0.0" />-->
+<!--   </route>-->
+<!--   <route id="5" town="Town05">-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="106.9" y="132.9" yaw="-180.0" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="319.419098" y="133.499930" yaw="-179.994690" z="0.0" />-->
+<!--      <weather id="HardRainNight" cloudiness="90.000000" precipitation="60.000000" precipitation_deposits="100.000000"-->
+<!--               wind_intensity="1.000000" sun_azimuth_angle="270.000000" sun_altitude_angle="-80.000000"-->
+<!--               fog_density="0.000000" fog_distance="0.000000" fog_falloff="0.000000" wetness="0.000000"/>-->
+<!--   </route>-->
+   <!-- Straight junction scenarios -->
+   <route id="4" town="Town05">
+      <waypoint pitch="360.0" roll="0.0" x="72.19" y="-5.6" yaw="180.0" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="40.49" y="-1.8" yaw="179.8790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="17.05" y="-1.83" yaw="179.8790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="3.175814" y="-1.83" yaw="179.8790954589844" z="0.0" />
+   </route>
+   <route id="5" town="Town05">
+      <waypoint pitch="360.0" roll="0.0" x="72.19" y="-5.6" yaw="180.0" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="40.49" y="-1.8" yaw="179.8790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="17.05" y="-1.83" yaw="179.8790954589844" z="0.0" />
+      <waypoint pitch="360.0" roll="0.0" x="3.175814" y="-1.83" yaw="179.8790954589844" z="0.0" />
+      <weather id="HardRainNight" cloudiness="90.000000" precipitation="60.000000" precipitation_deposits="100.000000"
+               wind_intensity="1.000000" sun_azimuth_angle="270.000000" sun_altitude_angle="-80.000000"
+               fog_density="0.000000" fog_distance="0.000000" fog_falloff="0.000000" wetness="0.000000"/>
+   </route>
+<!--   <route id="7" town="Town05">-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-76.64" y="0.8" yaw="-180.0" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-112.49" y="0.8" yaw="-179.8790954589844" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-143.4" y="0.8" yaw="-179.8790954589844" z="0.0" />-->
+<!--      <waypoint pitch="360.0" roll="0.0" x="-150.4" y="0.8" yaw="-179.8790954589844" z="0.0" />-->
+<!--   </route>-->
+</routes>
